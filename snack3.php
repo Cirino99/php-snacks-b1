@@ -11,15 +11,11 @@ $posts = [
             'author' => 'Michele Papagni',
             'text' => 'Testo post 2'
         ],
-    ],
-    '10/02/2019' => [
         [
             'title' => 'Post 3',
             'author' => 'Michele Papagni',
             'text' => 'Testo post 3'
-        ]
-    ],
-    '15/05/2019' => [
+        ],
         [
             'title' => 'Post 4',
             'author' => 'Michele Papagni',
@@ -30,10 +26,44 @@ $posts = [
             'author' => 'Michele Papagni',
             'text' => 'Testo post 5'
         ],
+    ],
+    '10/02/2019' => [
         [
             'title' => 'Post 6',
             'author' => 'Michele Papagni',
             'text' => 'Testo post 6'
+        ],
+        [
+            'title' => 'Post 7',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 7'
+        ],
+        [
+            'title' => 'Post 8',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 8'
+        ],
+        [
+            'title' => 'Post 9',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 9'
+        ],
+    ],
+    '15/05/2019' => [
+        [
+            'title' => 'Post 10',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 10'
+        ],
+        [
+            'title' => 'Post 11',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 11'
+        ],
+        [
+            'title' => 'Post 11',
+            'author' => 'Michele Papagni',
+            'text' => 'Testo post 11'
         ]
     ],
 ];
@@ -61,10 +91,10 @@ $date = array_keys($posts);
                 <div>
                     <span><?= $date[$i] ?></span>
                 </div>
-                <div class="d-flex ms-4">
+                <div class="d-flex flex-wrap ms-4">
                     <?php
                     for ($j = 0; $j < count($post); $j++) { ?>
-                        <div class="me-4">
+                        <div class="my-post">
                             <span><?= $post[$j]['author'] ?></span>
                             <span><?= $post[$j]['title'] ?></span>
                             <p><?= $post[$j]['text'] ?></p>

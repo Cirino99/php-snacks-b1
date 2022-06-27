@@ -6,3 +6,11 @@
 .fail {
     color: red;
 }
+
+/* style snack 3 */
+.my-post {
+    width: 300px;
+    display: block;
+    border: .5px solid black;
+    margin: 0 5px;
+}
