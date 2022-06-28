@@ -87,7 +87,7 @@ $date = array_keys($posts);
         <?php
         for ($i = 0; $i < count($posts); $i++) {
             $post = $posts[$date[$i]]; ?>
-            <div class="d-flex">
+            <div class="d-flex mt-3">
                 <div>
                     <span><?= $date[$i] ?></span>
                 </div>
